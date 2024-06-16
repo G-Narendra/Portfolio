@@ -1,0 +1,81 @@
+/* HeaderComponent.css */
+
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.header .profile-image {
+  padding-left: 30px;
+  flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header .profile-image img {
+  filter: grayscale(20%);
+  filter: contrast(120%);
+  filter: drop-shadow(16px 16px 20px rgb(54, 53, 43));
+  filter: saturate(120%);
+  width: 300px;
+  height: 300px;
+  border-radius: 160px 160px 160px 160px;
+  border: 5px solid #f0a500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header .profile-image:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.header .intro {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.header .intro h1 {
+  font-size: 2.5em;
+  color: #f0a500;
+  margin-bottom: 10px;
+}
+
+.header .intro h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.header .intro p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header .intro button {
+  background-color: #f0a500;
+  border: none;
+  color: #1a1a1a;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.header .intro button:hover {
+  background-color: #d49000;
+}

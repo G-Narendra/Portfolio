@@ -1,0 +1,72 @@
+/* AboutMeComponent.css */
+
+.about-me {
+  padding: 50px 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.about-me .container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.about-me h2 {
+  font-size: 2.5em;
+  color: #f0a500;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.about-me h2::after {
+  content: '';
+  width: 50px;
+  height: 4px;
+  background-color: #f0a500;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+
+.about-me .personal-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-me .personal-info p {
+  flex: 1 1 30%;
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #ffffff;
+  background-color: rgba(240, 165, 0, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.about-me .personal-info p:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 176, 5, 0.378);
+}
+
+@media (max-width: 768px) {
+  .about-me .personal-info p {
+      flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me .personal-info p {
+      flex: 1 1 100%;
+  }
+}

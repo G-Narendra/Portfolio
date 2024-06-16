@@ -1,0 +1,87 @@
+/* ExperienceComponent.css */
+
+.experience {
+  padding: 50px 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.experience .container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.experience h2 {
+  font-size: 2.5em;
+  color: #f0a500;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.experience h2::after {
+  content: '';
+  width: 50px;
+  height: 4px;
+  background-color: #f0a500;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+
+.experience .education-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.experience .education-item {
+  background: linear-gradient(135deg, #2e2e2e 0%, #3b3b3b 100%);
+  padding: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience .education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.experience .education-item h3 {
+  font-size: 1.5em;
+  color: #f0a500;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f0a500;
+  padding-bottom: 5px;
+}
+
+.experience .education-item p {
+  font-size: 1.2em;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .experience .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience .container {
+    width: 100%;
+  }
+}
