@@ -1,0 +1,117 @@
+/* PortfolioComponent.css */
+
+.portfolio {
+  padding: 50px 0;
+  color: #ffffff;
+  text-align: center;}
+
+.portfolio .container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio h2 {
+  font-size: 2.5em;
+  color: #f0a500;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.portfolio h2::after {
+  content: '';
+  width: 50px;
+  height: 4px;
+  background-color: #f0a500;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+
+.portfolio .portfolio-filter {
+  margin-bottom: 30px;
+}
+
+.portfolio .portfolio-filter button {
+  background-color: transparent;
+  border: 2px solid #f0a500;
+  color: #f0a500;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.portfolio .portfolio-filter button:hover {
+  background-color: #f0a500;
+  color: #1a1a1a;
+  transform: scale(1.1);
+}
+
+.portfolio .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.portfolio .portfolio-item {
+  width: 30%;
+  margin: 15px 0;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio .portfolio-item img {
+  width: 100%;
+  
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio .portfolio-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio .portfolio-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio .portfolio-item h3 {
+  font-size: 1.5em;
+  color: #f0a500;
+  margin: 10px 0;
+}
+
+.portfolio .portfolio-item p {
+  font-size: 1em;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.portfolio a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .portfolio .portfolio-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio .portfolio-item {
+    width: 100%;
+  }
+}
