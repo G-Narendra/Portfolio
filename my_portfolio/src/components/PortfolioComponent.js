@@ -13,12 +13,12 @@ const projects = [
   },
   {
     id: 2,
-    category: 'Machine Learning',
-    image: `${process.env.PUBLIC_URL}/images/project2.jpg`,
-    title: 'Lifespan Prediction Of Pancreatic cancer Patient',
-    description: 'Used clustering algorithms to predict the lifespan of pancreatic cancer patient based on various features.',
-    extraDescription: 'Implemented using Python and machine learning libraries like scikit-learn to cluster the data and make predictions.',
-    githubUrl: '' // Link not available
+    category: 'Deep Learning',
+    image: `${process.env.PUBLIC_URL}/images/pancreas.png`,
+    title: 'Early Detection and Classification of Pancreatic Cancer Using Medical Imaging',
+    description: 'Used Deep Learning algorithms to predict the pancreatic Tumer based on various features.',
+    extraDescription: 'Implemented using Python and Deep learning libraries like TensorFlow and Keras and make predictions.',
+    githubUrl: 'https://github.com/G-Narendra/Pancreatic-cancer-detection.git' // Link not available
   },
   {
     id: 3,

@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-.skills {
+.skills-and-certifications {
   padding: 50px 0;
   color: #ffffff;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
 
-.skills .container {
+.skills-and-certifications .container {
   width: 80%;
   margin: 0 auto;
 }
 
-.skills h2 {
+.skills-and-certifications h2 {
   font-size: 2.5em;
   color: #f0a500;
   margin-bottom: 30px;
@@ -20,37 +20,42 @@
   letter-spacing: 1.5px;
 }
 
-.skills .skills-list {
+.skills-and-certifications .skills-list, .certifications-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.skills .skill {
+.skills-and-certifications .skill, .certification {
   width: 22%;
   margin: 15px 0;
   text-align: center;
 }
 
-.skills .skill-name {
+.skills-and-certifications .skill-name, .certification h3 {
   font-size: 1.2em;
   margin-top: 10px;
   color: #f0a500;
 }
 
-.skills .skill-image {
+.skills-and-certifications .certification p {
+  font-size: 1em;
+  color: #fff;
+}
+
+.skills-and-certifications .skill-image {
   width: 100px; /* Adjust the size as needed */
   height: auto;
 }
 
 @media (max-width: 768px) {
-  .skills .skill {
+  .skills-and-certifications .skill, .certification {
     width: 45%;
   }
 }
 
 @media (max-width: 480px) {
-  .skills .skill {
+  .skills-and-certifications .skill, .certification {
     width: 100%;
   }
 }

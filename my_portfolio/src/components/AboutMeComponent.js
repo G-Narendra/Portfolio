@@ -11,10 +11,10 @@ const AboutMeComponent = () => {
           <p>Last Name: Gandikota</p>
           <p>Age: 20 Years</p>
           <p>Nationality: Indian</p>
-          <p>Address: Andhrapradesh, Narasaraopet</p>
+          <p>Address: Dodleru(V),Krosur(M),Palnadu(Dt),Andhra pradesh</p>
           <p>Phone: +91 9948566970</p>
           <p>Email: narendragandikota2540@mail.com</p>
-          <p>Languages: Telugu, English</p>
+          <p>Languages: Telugu, English,A little bit Hindi & German</p>
         </div>
       </div>
     </section>

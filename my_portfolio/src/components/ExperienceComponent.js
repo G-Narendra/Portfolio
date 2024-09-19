@@ -1,9 +1,9 @@
 import React from 'react';
 import './ExperienceComponent.css';
 const educations = [
-  { year: '2014-2019', degree: 'Secondary Schooling', institution: 'ZPHSchool Dodleru' },
-  { year: '2019-2021', degree: 'Intermediate', institution: 'Sri Krishna Chaithanya Jr College' },
-  { year: '2021-2025', degree: 'Bachelor Degree', institution: 'Narasaraopeta Engineering College' }
+  { year: '2014-2019', degree: 'Secondary Schooling', institution: 'ZPHSchool, Dodleru' },
+  { year: '2019-2021', degree: 'Intermediate', institution: 'Sri Krishna Chaithanya Jr College, Narasaropet' },
+  { year: '2021-2025', degree: 'Bachelor Degree', institution: 'Narasaraopeta Engineering College(Autonomous), Narasaropet' }
 ];
 
 const ExperienceComponent = () => {

@@ -5,19 +5,36 @@ const nodemailer = require('nodemailer');
 const cors = require('cors');
 
 const app = express();
-const port = 5000;
 
-app.use(cors());
+// Set the port from the environment variable or default to 5000
+const port = process.env.PORT || 5000;
+
+// Middleware setup
+// app.use(cors({
+//  origin: 'http://localhost:3000' //'https://g-narendra-portfolio.netlify.app'  // Specify your frontend domain
+// }));
+app.use(cors({
+  origin: 'http://localhost:3000',  // Allow only your React frontend
+  methods: ['GET', 'POST'],         // Specify allowed HTTP methods
+  allowedHeaders: ['Content-Type']   // Specify allowed headers
+}));
+// app.use(cors());
 app.use(bodyParser.json());
 
+// Root route
+app.get('/', (req, res) => {
+  res.send('Welcome to the Portfolio Backend!');
+});
+
+// Email sending route
 app.post('/send', async (req, res) => {
   const { name, email, subject, message } = req.body;
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.SMTP_USER, // your Gmail address
-      pass: process.env.SMTP_PASS // app-specific password
+      user: process.env.SMTP_USER, // your Gmail address from .env
+      pass: process.env.SMTP_PASS // app-specific password from .env
     }
   });
 
@@ -38,6 +55,7 @@ app.post('/send', async (req, res) => {
   }
 });
 
+// Start the server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
